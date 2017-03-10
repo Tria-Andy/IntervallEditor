@@ -177,7 +177,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="comboBox"/>
+           <widget class="QComboBox" name="comboBox_reps"/>
           </item>
           <item>
            <widget class="QLabel" name="label_4">
@@ -272,31 +272,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QTreeWidget" name="treeWidget_intervall">
-            <property name="frameShape">
-             <enum>QFrame::Panel</enum>
-            </property>
-            <property name="verticalScrollBarPolicy">
-             <enum>Qt::ScrollBarAsNeeded</enum>
-            </property>
-            <property name="horizontalScrollBarPolicy">
-             <enum>Qt::ScrollBarAlwaysOff</enum>
-            </property>
-            <property name="dragEnabled">
-             <bool>true</bool>
-            </property>
-            <property name="dragDropMode">
-             <enum>QAbstractItemView::InternalMove</enum>
-            </property>
-            <property name="defaultDropAction">
-             <enum>Qt::MoveAction</enum>
-            </property>
-            <column>
-             <property name="text">
-              <string notr="true">1</string>
-             </property>
-            </column>
-           </widget>
+           <widget class="QTreeView" name="treeView_intervall"/>
           </item>
           <item>
            <widget class="QFrame" name="frame_5">
@@ -474,9 +450,18 @@
                  </widget>
                 </item>
                 <item>
-                 <widget class="QListView" name="listView_values">
+                 <widget class="QFrame" name="frame_editValues">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>100</height>
+                   </size>
+                  </property>
                   <property name="frameShape">
-                   <enum>QFrame::Panel</enum>
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
                   </property>
                  </widget>
                 </item>

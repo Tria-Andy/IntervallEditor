@@ -82,14 +82,6 @@ public:
             {
                 QString value = index.data(Qt::DisplayRole).toString();
                 QComboBox *comboBox = static_cast<QComboBox*>(editor);
-                if(index.row() == 0)
-                {
-                    comboBox->addItems(phaseList);
-                }
-                else
-                {
-                    comboBox->addItems(levelList);
-                }
                 comboBox->setCurrentText(value);
             }
             if(index.row() == 2)
